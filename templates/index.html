@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ReportoBuster</title>
+    <style>
+        body {
+            background-color: #EEF1ED;
+            color: #000000;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: 4em;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+        }
+
+        label {
+            display: block;
+            font-size: 1.2em;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        input[type="text"], input[type="number"], input[type="email"] {
+            padding: 10px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            border: none;
+            width: 300px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        button {
+            background-color: #2980b9;
+            color: #fff;
+            padding: 12px 30px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            border: none;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1a5276;
+        }
+
+        .logo {
+            max-width: 300px;
+            margin-bottom: 20px;
+        }
+        
+        .company-logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            max-width: 66px;
+            margin-bottom: 20px;
+        }
+        
+        .google-logo {
+            max-width: 200px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://www.codebusters.ca/icon.svg" alt="Company Logo" class="company-logo">
+    <h1>ReportoBuster</h1>
+    <img src="https://ci5.googleusercontent.com/proxy/JJy_kjfEPTCV_ciHnces0QyOxcNi9oKhP-0eBbuTqGQteETSwtOAlnnJE3c3JQ2sdjTOzHdXt54ESpb2cYIFVsuejmW6yIsv1O_RSnop_huMlEB7KO-rew-YCi8ZO_5Z7vNGnTNHNh0V2ak16cQI7AXW5RyOSDnZaafpkAPDFEePPSA=s0-d-e1-ft#http://cdn.mcauto-images-production.sendgrid.net/3a9012066dc3268e/f97c7812-8945-49d4-bd1c-cfa9a0bd5789/66x62.png" alt="Google Logo" class="google-logo">
+    <form action="/run-task" method="get">
+        <label for="repo">GitHub Repository (Ex. codebusters-ca/capcalc1):</label>
+        <input type="text" id="repo" name="repo"><br><br>
+        <label for="weeks">Weeks:</label>
+        <input type="number" id="weeks" name="weeks"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <button type="submit">Start Bot</button>
+    </form>
+</body>
+</html>
