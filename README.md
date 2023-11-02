@@ -1,4 +1,4 @@
-# ReportoBuster 🤖
+# Reporto-Builder 🤖
 
 GitHub bot that creates reports from merged pull requests!
 
